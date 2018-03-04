@@ -117,7 +117,6 @@ public abstract class Character implements Explorer {
         return health;
     }
 
-    // Andra metoder
     public void resetHealth() {
         health = MAX_HEALTH;
     }
@@ -164,10 +163,8 @@ public abstract class Character implements Explorer {
      * @param char2 the 2nd opponent
      */
     public void fight(Character char1, Character char2) {
-        int battle1 = this.secretWeapon - char1.getSecretWeapon();
-        int battle2 = this.secretWeapon - char2.getSecretWeapon();
-
-
+        this.health += this.secretWeapon - char1.getSecretWeapon();
+        this.health += this.secretWeapon - char2.getSecretWeapon();
     }
 
     /**
@@ -183,9 +180,9 @@ public abstract class Character implements Explorer {
 
     @Override
     public void explore(Maze mazeToExplore) {
-        Maze aux = mazeToExplore.clone();
-        if (aux.findPathFrom(1, 0)) {
-            aux.print(getFootprint());
+        Maze clonedMaze = mazeToExplore.clone();
+        if (clonedMaze.findPathFrom(1, 0)) {
+            clonedMaze.print(getFootprint());
         } else {
             System.out.println("No solution found!");
         }
