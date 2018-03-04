@@ -37,16 +37,25 @@ public class Main {
         Character[] characters = {heroJohn, witchMary, ghostGeorge, vampireFred,
                 witchHunterEve,ghostBusterPeter, vampireHunterEddy, zombieZack};
 
+        // print info about the characters
         Arrays.stream(characters)
                 .forEach(Character::printInfo);
 
-        System.out.println("All exploring: hero: +, witch: w, ghost: g, vampire: v, witchHunter: W, ghostbuster: G, vampireHunter: V, ferrari:g c");
+        // create an array of explorers
+        Explorer[] explorers = {
+                heroJohn,
+                witchMary,
+                ghostGeorge,
+                vampireFred,
+                witchHunterEve,
+                ghostBusterPeter,
+                vampireHunterEddy,
+                myFerrari
+        };
 
-        Explorer[] explorers = {heroJohn, witchMary, ghostGeorge, vampireFred,
-                witchHunterEve, ghostBusterPeter, vampireHunterEddy, myFerrari};
-
-        // explore the maze
-        Arrays.stream(explorers).forEach(e -> e.explore(sampleMaze));
+        // explore the maze by invoking every explorers explore()
+        Arrays.stream(explorers)
+                .forEach(e -> e.explore(sampleMaze));
     }
 
 }
