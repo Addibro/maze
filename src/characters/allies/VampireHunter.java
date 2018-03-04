@@ -2,9 +2,6 @@ package characters.allies;
 
 import characters.Character;
 
-/**
- * Created by andreasalme on 2016-08-04.
- */
 public class VampireHunter extends Ally {
 
     public VampireHunter(String name, String description){

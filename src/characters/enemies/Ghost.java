@@ -1,9 +1,6 @@
 package characters.enemies;
 import characters.Character;
 
-/**
- * Created by andreasalme on 2016-08-04.
- */
 public class Ghost extends Enemy {
 
     /**

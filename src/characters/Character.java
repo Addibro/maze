@@ -3,9 +3,6 @@ package characters;
 import characters.enemies.Enemy;
 import terrains.Maze;
 
-/**
- * Created by andreasalme on 2016-08-04.
- */
 public abstract class Character implements Explorer {
 
     // klass-variabler för att definiera max hp för alla objekt som extends Character klassen

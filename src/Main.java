@@ -1,8 +1,3 @@
-/**
- *
- * Created by andreasalme on 2016-08-04.
- */
-
 import characters.Character;
 import characters.Explorer;
 import characters.allies.*;

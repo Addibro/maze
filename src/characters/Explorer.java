@@ -4,8 +4,6 @@ import terrains.Maze;
 
 /**
  * This interface models a generic explorer that can traverse different terrains
- * @author uc3m
- * @version 1.0
  */
 public interface Explorer {
 

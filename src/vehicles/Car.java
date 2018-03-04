@@ -2,9 +2,6 @@ package vehicles;
 import terrains.Maze;
 import characters.Explorer;
 
-/**
- * Created by andreasalme on 2016-08-04.
- */
 public class Car implements Explorer {
 
     private String name;

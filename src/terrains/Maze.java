@@ -2,14 +2,10 @@ package terrains;
 
 import java.util.Arrays;
 
-
-
 /**
  * This class model a generic maze that can be solved recursively
  * using the backtracking algorithm.
  *
- * @author uc3m
- * @version 1.0
  */
 public class Maze implements Cloneable{
 
