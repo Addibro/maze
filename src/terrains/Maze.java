@@ -20,7 +20,7 @@ public class Maze implements Cloneable{
      * Will correspond to a array with symbols
      *
      */
-    public static int[][] DEFAULT_MAZE =
+    private static int[][] DEFAULT_MAZE =
                     {{0, 0, 1, 1, 1, 1, 1, 1},
                      {2, 0, 1, 0, 0, 0, 1, 1},
                      {1, 0, 1, 0, 0, 0, 0, 0},
@@ -130,7 +130,7 @@ public class Maze implements Cloneable{
      * '+' - path taken
      * '*' - goal.
      */
-    public void print() {
+    private void print() {
         for (int[] aMaze : maze) {
             System.out.print("| ");
             for (int col = 0; col < aMaze.length; col++) {
