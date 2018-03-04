@@ -34,7 +34,6 @@ public class Main {
 
         Maze sampleMaze = new Maze();
 
-        //polymorphism using superclasses
         Character[] characters = {heroJohn, witchMary, ghostGeorge, vampireFred,
                 witchHunterEve,ghostBusterPeter, vampireHunterEddy, zombieZack};
 
